@@ -1,3 +1,5 @@
+import time # Importar la libreria time
+
 def busqueda_binaria(list, valor):
     # Inicializar los valores de los indices
     inicio = 0
@@ -22,6 +24,20 @@ def busqueda_binaria(list, valor):
     return -1
 
 # Casos de pruebas
+# Caso de prueba 1
+start = time.time() # Iniciar el tiempo
 print(busqueda_binaria([1, 2, 3, 4, 5], 3)) # 2
+end = time.time() # Finalizar el tiempo
+print(f"Tiempo de ejecucion: {end - start:.10} segundos") # Imprimir el tiempo de ejecucion
+
+# Caso de prueba 2
+start = time.time() # Iniciar el tiempo
 print(busqueda_binaria([1, 2, 3, 4, 5], 6)) # -1
+end = time.time() # Finalizar el tiempo
+print(f"Tiempo de ejecucion: {end - start:.10} segundos") # Imprimir el tiempo de ejecucion
+
+# Caso de prueba 3
+start = time.time() # Iniciar el tiempo
 print(busqueda_binaria([1, 2, 3, 4, 5], 1)) # 0
+end = time.time() # Finalizar el tiempo
+print(f"Tiempo de ejecucion: {end - start:.10} segundos") # Imprimir el tiempo de ejecucion
